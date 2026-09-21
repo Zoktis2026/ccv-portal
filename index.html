@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cirholy Collaborative Ventures — Member Portal</title>
 
-  <!-- Open Graph / WhatsApp Preview -->
+  <!-- Open Graph / WhatsApp Preview Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Cirholy Collaborative Ventures">
   <meta property="og:title" content="Cirholy Collaborative Ventures">
@@ -23,16 +24,70 @@
 
   <link rel="canonical" href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec">
 
-  <!-- Delayed redirect so WhatsApp has time to read the card -->
-  
+  <!-- Instant redirect for browsers (WhatsApp scraper ignores this) -->
   <script>
-    setTimeout(function() {
-      window.location.replace("https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec");
-    }, 2500);
+    window.location.replace("https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec");
   </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #002855;
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 18px;
+      border: 2px solid #C8940E;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #D5DCE8;
+      margin-bottom: 24px;
+    }
+    .spinner {
+      width: 26px;
+      height: 26px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      border-top-color: #C8940E;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    a {
+      color: #F0B429;
+      font-size: 12px;
+      text-decoration: none;
+      margin-top: 24px;
+      display: inline-block;
+    }
+  </style>
 </head>
-<body style="font-family:sans-serif;text-align:center;padding:50px 20px;background:#F5F7FA;color:#002855;">
-  <p style="font-size:18px;font-weight:600;">Loading Cirholy Member Portal…</p>
-  <p><a href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec" style="color:#C8940E;text-decoration:none;font-weight:600;">Click here if you are not redirected automatically</a></p>
+<body>
+  <img src="https://drive.google.com/thumbnail?id=1NvhF7x5L6cRfvaeY4gEIIKaYwWSlfk9B&sz=w200" alt="Cirholy Logo" class="logo">
+  <div class="title">Cirholy Collaborative Ventures</div>
+  <div class="subtitle">Opening Member Portal…</div>
+  <div class="spinner"></div>
+  <a href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec">Click here if portal does not open automatically</a>
 </body>
 </html>
