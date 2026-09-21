@@ -6,12 +6,14 @@
 
   <!-- Open Graph / WhatsApp Preview -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cirholy Collaborative Ventures">
   <meta property="og:title" content="Cirholy Collaborative Ventures">
   <meta property="og:description" content="Savings · Loans · Community Growth — Secure member portal for Cirholy Cooperative Society.">
   <meta property="og:image" content="https://drive.google.com/thumbnail?id=1NvhF7x5L6cRfvaeY4gEIIKaYwWSlfk9B&sz=w1200">
+  <meta property="og:image:secure_url" content="https://drive.google.com/thumbnail?id=1NvhF7x5L6cRfvaeY4gEIIKaYwWSlfk9B&sz=w1200">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
@@ -19,16 +21,18 @@
   <meta name="twitter:description" content="Savings · Loans · Community Growth — Secure member portal.">
   <meta name="twitter:image" content="https://drive.google.com/thumbnail?id=1NvhF7x5L6cRfvaeY4gEIIKaYwWSlfk9B&sz=w1200">
 
-  <!-- Immediate redirect to your Apps Script Web App -->
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec">
   <link rel="canonical" href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec">
 
+  <!-- Delayed redirect so WhatsApp has time to read the card -->
+  
   <script>
-    window.location.replace("https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec");
+    setTimeout(function() {
+      window.location.replace("https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec");
+    }, 2500);
   </script>
 </head>
 <body style="font-family:sans-serif;text-align:center;padding:50px 20px;background:#F5F7FA;color:#002855;">
-  <p>Loading Cirholy Member Portal…</p>
-  <p><a href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec" style="color:#C8940E;">Click here if you are not redirected automatically</a></p>
+  <p style="font-size:18px;font-weight:600;">Loading Cirholy Member Portal…</p>
+  <p><a href="https://script.google.com/macros/s/AKfycbwheGhKjtsbWkgOabidQIK4QjKxPK_IKkUOlG6kKLR5gdFZkF297WHXVW-T3Uv6y7cR/exec" style="color:#C8940E;text-decoration:none;font-weight:600;">Click here if you are not redirected automatically</a></p>
 </body>
 </html>
