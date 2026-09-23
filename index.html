@@ -24,16 +24,47 @@
 
   <link rel="canonical" href="https://script.google.com/macros/s/AKfycbxnTAEIuG98Hp2hDwcOKJvhcBb4wGNu6HCu03soJWVY7gVeGLY0rUtBt7GwRC3_Al2M/exec">
 
-  <!-- 2.5 second delay so crawlers fetch the logo before redirect -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .splash {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.4s ease-out;
+    }
+    .splash-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid #C8940E;
+      box-shadow: 0 8px 24px rgba(0, 40, 85, 0.12);
+      object-fit: cover;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+
+  <!-- Silent background redirect -->
   <script>
     setTimeout(function() {
       window.location.replace("https://script.google.com/macros/s/AKfycbxnTAEIuG98Hp2hDwcOKJvhcBb4wGNu6HCu03soJWVY7gVeGLY0rUtBt7GwRC3_Al2M/exec");
-    }, 2500);
+    }, 1800);
   </script>
 </head>
-<body style="font-family:sans-serif;text-align:center;padding:60px 20px;background:#F5F7FA;color:#002855;">
-  <p style="font-size:18px;font-weight:600;">Loading Cirholy Member Portal…</p>
-  <p style="font-size:14px;color:#6b7a90;">Please wait a moment while we redirect you.</p>
-  <p><a href="https://script.google.com/macros/s/AKfycbxnTAEIuG98Hp2hDwcOKJvhcBb4wGNu6HCu03soJWVY7gVeGLY0rUtBt7GwRC3_Al2M/exec" style="color:#C8940E;text-decoration:none;font-weight:600;">Click here if you are not redirected automatically</a></p>
+<body>
+  <div class="splash">
+    <img class="splash-logo" src="https://drive.google.com/thumbnail?id=1NvhF7x5L6cRfvaeY4gEIIKaYwWSlfk9B&sz=w200" alt="Cirholy Logo">
+  </div>
 </body>
 </html>
